@@ -23,11 +23,17 @@ export default function HeroSection() {
 
       {/* Buttons */}
       <div className="mt-8 flex flex-col sm:flex-row gap-4">
-        <button className="bg-[#ffc107] text-black px-6 py-3 rounded-full flex items-center justify-center gap-2 text-sm hover:bg-zinc-900 transition w-full sm:w-auto">
+        <button
+          className="bg-[#ffc107] text-black px-6 py-3 rounded-full flex items-center justify-center gap-2 text-sm hover:bg-zinc-900 transition w-full sm:w-auto"
+          onClick={() => window.open('https://t.me/Evohive_bot', '_blank')}
+        >
           Start with $10
           <Zap className="w-4 h-4" fill="black" />
         </button>
-        <button className="bg-transparent text-white border border-white/30 px-6 py-3 rounded-full text-sm hover:bg-white/10 transition w-full sm:w-auto">
+        <button
+          className="bg-transparent text-white border border-white/30 px-6 py-3 rounded-full text-sm hover:bg-white/10 transition w-full sm:w-auto"
+          onClick={() => window.open('https://t.me/Evohive_bot', '_blank')}
+        >
           Join the Hive
         </button>
       </div>

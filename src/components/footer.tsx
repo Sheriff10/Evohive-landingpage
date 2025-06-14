@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import Link from 'next/link';
+import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
   return (
@@ -14,31 +14,11 @@ const Footer = () => {
 
         {/* Right Side: Social Icons */}
         <div className="flex items-center space-x-4">
-          <Link
-            href="https://twitter.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Twitter"
-          >
-            <Image
-              src="/assets/twitter.png"
-              alt="X"
-              width={20}
-              height={20}
-            />
+          <Link href="https://x.com/evohiveai" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+            <Image src="/assets/twitter.png" alt="X" width={20} height={20} />
           </Link>
-          <Link
-            href="https://t.me"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="Telegram"
-          >
-            <Image
-              src="/assets/telegram.png"
-              alt="Telegram"
-              width={20}
-              height={20}
-            />
+          <Link href="https://t.me/evohiveai" target="_blank" rel="noopener noreferrer" aria-label="Telegram">
+            <Image src="/assets/telegram.png" alt="Telegram" width={20} height={20} />
           </Link>
         </div>
       </div>
