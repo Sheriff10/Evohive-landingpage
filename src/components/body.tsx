@@ -121,10 +121,13 @@ export default function LandingPageBody() {
           <p className="text-white/70">
             EvoHive does the trading. You just check in, refer, and grow.
           </p>
-          <button className="bg-[#ffc107] text-black px-6 py-3 rounded-full flex items-center max-w-[160px] gap-2 text-sm hover:bg-zinc-900 transition">
+            <button
+            className="bg-[#ffc107] text-black px-6 py-3 rounded-full flex items-center max-w-[160px] gap-2 text-sm hover:bg-zinc-900 transition"
+            onClick={() => window.open('https://t.me/Evohive_bot', '_blank')}
+            >
             Start with $10
             <Zap className="w-4 h-4" fill='black' />
-          </button>
+            </button>
         </div>
 
         {/* Right Cards */}
