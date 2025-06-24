@@ -1,22 +1,24 @@
-'use client'
+"use client";
 
-import Image from 'next/image'
-import Navbar from '@/components/navbar'
-import HeroSection from '@/components/top'
-import LandingPageBody from '@/components/body'
-import LowerBody from '@/components/lowerbody'
-import Roadmap from '@/components/roadmap'
-import Footer from '@/components/footer'
+import Image from "next/image";
+import Navbar from "@/components/navbar";
+import HeroSection from "@/components/top";
+import LandingPageBody from "@/components/body";
+import LowerBody from "@/components/lowerbody";
+import Roadmap from "@/components/roadmap";
+import Footer from "@/components/footer";
+import DisclaimerModal from "@/components/disclaimer";
 
 export default function Home() {
   return (
     <div id="home" className="relative min-h-screen overflow-x-hidden bg-black">
+      <DisclaimerModal />
       {/* Decorative Background Lines */}
       <div className="absolute top-0 left-0 w-full h-full pointer-events-none z-0 overflow-hidden">
         {/* Inner Ellipse */}
         <div className="absolute top-0 -mt-[90px] left-1/2 transform -translate-x-1/2 w-[200%] max-w-[1400px] h-[200vh]">
           <div className="relative w-full h-full">
-            <Image 
+            <Image
               src="/assets/Ellipse.png"
               alt="Decorative curve line"
               fill
@@ -29,7 +31,7 @@ export default function Home() {
         {/* Outer Ellipse */}
         <div className="absolute top-0 -mt-[80px] left-1/2 transform -translate-x-1/2 w-[200%] max-w-[1700px] h-[200vh] ml-[30px]">
           <div className="relative w-full h-full">
-            <Image 
+            <Image
               src="/assets/Ellipse.png"
               alt="Decorative curve line"
               fill
@@ -50,5 +52,5 @@ export default function Home() {
         <Footer />
       </div>
     </div>
-  )
+  );
 }
